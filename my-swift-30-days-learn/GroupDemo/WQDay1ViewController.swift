@@ -30,7 +30,11 @@ class WQDay1ViewController: UIViewController {
             make.top.equalTo(self.view)
             make.centerX.equalTo(self.view.snp.centerX)
         }
-        toplable.font = UIFont.systemFont(ofSize: 15, weight: 5)
+        if #available(iOS 8.2, *) {
+            toplable.font = UIFont.systemFont(ofSize: 15, weight: 5)
+        } else {
+            // Fallback on earlier versions
+        }
         toplable.textColor = UIColor.black
         
         let startBtn:UIButton  = UIButton()
@@ -71,10 +75,14 @@ class WQDay1ViewController: UIViewController {
     
     func startHandle()  {
         if ((self.timer == nil)) {
-            self.timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (Timer) in
-                
-                self.starTimer()
-            })
+            if #available(iOS 10.0, *) {
+                self.timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (Timer) in
+                    
+                    self.starTimer()
+                })
+            } else {
+                // Fallback on earlier versions
+            }
             self.timer.fire()
         }else{
             

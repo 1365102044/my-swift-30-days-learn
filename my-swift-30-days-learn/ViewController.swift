@@ -18,12 +18,11 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         // Do any additional setup after loading the view, typically from a nib.
         
         self.title = "30-Day-Learn"
-        
+        self.automaticallyAdjustsScrollViewInsets = false
         
         self.view.addSubview(tableview)
         
     }
-    
     
     lazy var tableview: UITableView = {
         var  tabelview = UITableView(frame: self.view.bounds)
@@ -40,7 +39,9 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let curenrow = indexPath.row + 1;
         let didselctVCstr = "WQDay\(curenrow)ViewController"
-        self.navigationController?.pushViewController(VCSTRING_TO_VIEWCONTROLLER(didselctVCstr)!, animated: true)
+//        self.navigationController?.pushViewController(VCSTRING_TO_VIEWCONTROLLER(didselctVCstr)!, animated: true)
+        self.navigationController?.pushViewController(WQDay4ViewController(), animated: true)
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C70DA0C98429F85560B14669 /* Pods_my_swift_30_days_learn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E480237B6813A0218D46F01 /* Pods_my_swift_30_days_learn.framework */; };
+		F66570A61F0140A3009C09BD /* WQDay4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66570A51F0140A3009C09BD /* WQDay4ViewController.swift */; };
 		F6E45FE81F011AB10031FCF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E45FE71F011AB10031FCF1 /* AppDelegate.swift */; };
 		F6E45FEA1F011AB10031FCF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E45FE91F011AB10031FCF1 /* ViewController.swift */; };
 		F6E45FED1F011AB10031FCF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E45FEB1F011AB10031FCF1 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		3BD749F527587F41F242B182 /* Pods-my-swift-30-days-learn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-swift-30-days-learn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-my-swift-30-days-learn/Pods-my-swift-30-days-learn.debug.xcconfig"; sourceTree = "<group>"; };
 		5E480237B6813A0218D46F01 /* Pods_my_swift_30_days_learn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_swift_30_days_learn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2F217874E4CDDD45E84629 /* Pods-my-swift-30-days-learn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-swift-30-days-learn.release.xcconfig"; path = "Pods/Target Support Files/Pods-my-swift-30-days-learn/Pods-my-swift-30-days-learn.release.xcconfig"; sourceTree = "<group>"; };
+		F66570A51F0140A3009C09BD /* WQDay4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WQDay4ViewController.swift; sourceTree = "<group>"; };
 		F6E45FE41F011AB10031FCF1 /* my-swift-30-days-learn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-swift-30-days-learn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E45FE71F011AB10031FCF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6E45FE91F011AB10031FCF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				F6E460161F011AD20031FCF1 /* WQDay1ViewController.swift */,
 				F6E460171F011AD20031FCF1 /* WQDay3ViewController.swift */,
 				F6E4601A1F011ADC0031FCF1 /* WQDay2ViewController.swift */,
+				F66570A51F0140A3009C09BD /* WQDay4ViewController.swift */,
 			);
 			path = GroupDemo;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			files = (
 				F6E460181F011AD20031FCF1 /* WQDay1ViewController.swift in Sources */,
 				F6E460191F011AD20031FCF1 /* WQDay3ViewController.swift in Sources */,
+				F66570A61F0140A3009C09BD /* WQDay4ViewController.swift in Sources */,
 				F6E4601B1F011ADC0031FCF1 /* WQDay2ViewController.swift in Sources */,
 				F6E45FEA1F011AB10031FCF1 /* ViewController.swift in Sources */,
 				F6E45FE81F011AB10031FCF1 /* AppDelegate.swift in Sources */,
@@ -515,6 +519,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZW8V23FTFX;
 				INFOPLIST_FILE = "my-swift-30-days-learn/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "inborn.--.my-swift-30-days-learn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,6 +534,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZW8V23FTFX;
 				INFOPLIST_FILE = "my-swift-30-days-learn/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "inborn.--.my-swift-30-days-learn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -613,6 +619,7 @@
 				F6E4600E1F011AB20031FCF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6E4600F1F011AB20031FCF1 /* Build configuration list for PBXNativeTarget "my-swift-30-days-learnTests" */ = {
 			isa = XCConfigurationList;
@@ -621,6 +628,7 @@
 				F6E460111F011AB20031FCF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6E460121F011AB20031FCF1 /* Build configuration list for PBXNativeTarget "my-swift-30-days-learnUITests" */ = {
 			isa = XCConfigurationList;
@@ -629,6 +637,7 @@
 				F6E460141F011AB20031FCF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
