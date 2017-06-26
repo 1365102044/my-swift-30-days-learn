@@ -1,0 +1,6 @@
+framework module Pods_my_swift_30_days_learn {
+  umbrella header "Pods-my-swift-30-days-learn-umbrella.h"
+
+  export *
+  module * { export * }
+}
