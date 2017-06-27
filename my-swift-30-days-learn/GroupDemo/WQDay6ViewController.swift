@@ -15,10 +15,17 @@ class WQDay6ViewController: WQTableViewRootViewController {
         super.viewDidLoad()
 
         
-        
+        self.tableview.tableHeaderView?.addSubview(scrollerview)
         
     }
 
+    lazy var scrollerview: UIScrollView = {
+        let scrollerview = UIScrollView.init(frame: CGRect(x:0,y:0,width:self.view.frame.width,height:300))
+        scrollerview.bounces = true
+        scrollerview.alwaysBounceVertical = true
+        return scrollerview
+    }()
+    
     lazy var sourData: NSArray = {
         let sourData = NSArray()
         

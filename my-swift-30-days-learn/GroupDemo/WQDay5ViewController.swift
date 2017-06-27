@@ -19,7 +19,7 @@ class WQDay5ViewController: UIViewController, UITableViewDataSource, UITableView
         // Do any additional setup after loading the view.
         
         self.title = "tableview编辑"
-        let temp = "werqew,qwer124,qr1234,fqsadfas,r14fds,rwq1234tewr,64356y,653656fgd,r14fds,rwq1234tewr,64356y,653656fgdqwerafasdf,fdgwefgcxbvxc,sdfa"
+        let temp = "werqew,qwer124,qr1234,fqsadfas,r14fds,rwq1234tewr,64356y,653656fgd,r14fds,rwq1234tewr,64356y,653656fgdqwerafasdf,fdgwefgcxbvxc,sdfa,werqew,qwer124,qr1234,fqsadfas,r14fds,rwq1234tewr,64356y,653656fgd,r14fds,rwq1234tewr,64356y,653656fgdqwerafasdf,fdgwefgcxbvxc,sdfa"
         sourData = temp.components(separatedBy: ",")
         
         self.view.addSubview(tableview)
@@ -28,15 +28,15 @@ class WQDay5ViewController: UIViewController, UITableViewDataSource, UITableView
         
         imageview = UIImageView.init(frame: headerview.bounds)
         imageview.image = UIImage.init(named: "100.jpg")
-        imageview.contentMode = .scaleAspectFit
+        imageview.contentMode = .scaleToFill
         headerview.addSubview(imageview)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let offerY = scrollView.contentOffset.y
-        let scale =  -offerY/50
-        headerview.zoomScale = scale
+        let scalet =  -offerY/100 + 1
+        imageview.transform = CGAffineTransform(scaleX: scalet, y: scalet)
         
         
     }
@@ -79,7 +79,14 @@ class WQDay5ViewController: UIViewController, UITableViewDataSource, UITableView
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
-        
+        cell.frame.origin.x = self.view.frame.size.width
+        let tem = indexPath.row
+        UIView.animate(withDuration: 0.6, delay: 0.01 * Double(tem)  , usingSpringWithDamping: 0.4, initialSpringVelocity: 0, options: .transitionFlipFromLeft, animations: {
+            cell.frame.origin.x = 0
+            
+        }) { (Bool) in
+            
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
