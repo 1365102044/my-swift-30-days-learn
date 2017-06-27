@@ -14,6 +14,7 @@ class WQDay4ViewController: UIViewController,UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "图片的缩放"
         self.view.addSubview(scrollerview)
         scrollerview.contentSize = imageview.bounds.size
         scrollerview.addSubview(imageview)

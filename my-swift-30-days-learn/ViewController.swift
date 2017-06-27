@@ -11,17 +11,32 @@ import SnapKit
 
 class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
     
-    //    var tabelview = UITableView()
+    var timer = Timer()
     var data = Array<String>()
+    var numberTimer:Double = 0.0
+    var alearView = UIAlertView()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         self.title = "30-Day-Learn"
-        self.automaticallyAdjustsScrollViewInsets = false
-        
         self.view.addSubview(tableview)
         
+        
+    }
+    
+    func addTimer()  {
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(starTimer), userInfo: nil, repeats: true)
+        timer.fire()
+    }
+    func starTimer() {
+        numberTimer = numberTimer + 0.1
+        alearView.title = ("温馨提示(\(numberTimer))")
+        if numberTimer > 2.0 {
+            timer.invalidate()
+            numberTimer = 0.0
+            alearView.dismiss(withClickedButtonIndex: 0, animated: true)
+        }
     }
     
     lazy var tableview: UITableView = {
@@ -39,9 +54,7 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let curenrow = indexPath.row + 1;
         let didselctVCstr = "WQDay\(curenrow)ViewController"
-//        self.navigationController?.pushViewController(VCSTRING_TO_VIEWCONTROLLER(didselctVCstr)!, animated: true)
-        self.navigationController?.pushViewController(WQDay4ViewController(), animated: true)
-        
+        self.navigationController?.pushViewController(VCSTRING_TO_VIEWCONTROLLER(didselctVCstr)!, animated: true)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -54,25 +67,18 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         return cell
     }
+
     
-    /// 类文件字符串转换为ViewController
-    ///
-    /// - Parameter childControllerName: VC的字符串
-    /// - Returns: ViewController
     func VCSTRING_TO_VIEWCONTROLLER(_ childControllerName: String) -> UIViewController?{
         
-        // 1.获取命名空间
-        // 通过字典的键来取值,如果键名不存在,那么取出来的值有可能就为没值.所以通过字典取出的值的类型为AnyObject?
-        guard let clsName = Bundle.main.infoDictionary!["CFBundleExecutable"] else {
-            print("命名空间不存在")
-            return nil
-        }
-        // 2.通过命名空间和类名转换成类
+        
         var cls : AnyClass? = NSClassFromString(childControllerName)
         
         // swift 中通过Class创建一个对象,必须告诉系统Class的类型
         guard let clsType = cls as? UIViewController.Type else {
-            print("无法转换成UIViewController")
+            
+            
+            addlearVeiw(mesg: childControllerName)
             
             cls = NSClassFromString("WQDay1ViewController")
             let clstype = cls as? UIViewController.Type
@@ -90,6 +96,12 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         // Dispose of any resources that can be recreated.
     }
     
-    
+    func addlearVeiw(mesg:String)  {
+        
+        addTimer()
+        
+        alearView = UIAlertView.init(title: "温馨提示(0.0)", message: mesg, delegate: self, cancelButtonTitle: "知道了")
+        alearView.show()
+    }
 }
 

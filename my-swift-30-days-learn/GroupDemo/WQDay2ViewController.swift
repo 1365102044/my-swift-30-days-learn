@@ -18,6 +18,7 @@ class WQDay2ViewController: UIViewController, UITextViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "textview"
         self.view.backgroundColor = UIColor.white
         self.automaticallyAdjustsScrollViewInsets = false
         loadNavItem()

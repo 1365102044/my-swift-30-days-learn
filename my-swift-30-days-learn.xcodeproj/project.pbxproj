@@ -19,6 +19,9 @@
 		F6E460181F011AD20031FCF1 /* WQDay1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E460161F011AD20031FCF1 /* WQDay1ViewController.swift */; };
 		F6E460191F011AD20031FCF1 /* WQDay3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E460171F011AD20031FCF1 /* WQDay3ViewController.swift */; };
 		F6E4601B1F011ADC0031FCF1 /* WQDay2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E4601A1F011ADC0031FCF1 /* WQDay2ViewController.swift */; };
+		F6E4601D1F022A030031FCF1 /* WQDay5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E4601C1F022A030031FCF1 /* WQDay5ViewController.swift */; };
+		F6E4601F1F0232850031FCF1 /* WQDay6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E4601E1F0232850031FCF1 /* WQDay6ViewController.swift */; };
+		F6E460211F0232CA0031FCF1 /* WQTableViewRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E460201F0232CA0031FCF1 /* WQTableViewRootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		F6E460161F011AD20031FCF1 /* WQDay1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WQDay1ViewController.swift; sourceTree = "<group>"; };
 		F6E460171F011AD20031FCF1 /* WQDay3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WQDay3ViewController.swift; sourceTree = "<group>"; };
 		F6E4601A1F011ADC0031FCF1 /* WQDay2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WQDay2ViewController.swift; sourceTree = "<group>"; };
+		F6E4601C1F022A030031FCF1 /* WQDay5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WQDay5ViewController.swift; sourceTree = "<group>"; };
+		F6E4601E1F0232850031FCF1 /* WQDay6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WQDay6ViewController.swift; sourceTree = "<group>"; };
+		F6E460201F0232CA0031FCF1 /* WQTableViewRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WQTableViewRootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 				F6E45FEE1F011AB10031FCF1 /* Assets.xcassets */,
 				F6E45FF01F011AB10031FCF1 /* LaunchScreen.storyboard */,
 				F6E45FF31F011AB10031FCF1 /* Info.plist */,
+				F6E460201F0232CA0031FCF1 /* WQTableViewRootViewController.swift */,
 			);
 			path = "my-swift-30-days-learn";
 			sourceTree = "<group>";
@@ -165,6 +172,8 @@
 				F6E460171F011AD20031FCF1 /* WQDay3ViewController.swift */,
 				F6E4601A1F011ADC0031FCF1 /* WQDay2ViewController.swift */,
 				F66570A51F0140A3009C09BD /* WQDay4ViewController.swift */,
+				F6E4601C1F022A030031FCF1 /* WQDay5ViewController.swift */,
+				F6E4601E1F0232850031FCF1 /* WQDay6ViewController.swift */,
 			);
 			path = GroupDemo;
 			sourceTree = "<group>";
@@ -234,6 +243,7 @@
 		F6E45FDC1F011AB10031FCF1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WQ;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = inborn;
@@ -357,7 +367,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E4601F1F0232850031FCF1 /* WQDay6ViewController.swift in Sources */,
+				F6E460211F0232CA0031FCF1 /* WQTableViewRootViewController.swift in Sources */,
 				F6E460181F011AD20031FCF1 /* WQDay1ViewController.swift in Sources */,
+				F6E4601D1F022A030031FCF1 /* WQDay5ViewController.swift in Sources */,
 				F6E460191F011AD20031FCF1 /* WQDay3ViewController.swift in Sources */,
 				F66570A61F0140A3009C09BD /* WQDay4ViewController.swift in Sources */,
 				F6E4601B1F011ADC0031FCF1 /* WQDay2ViewController.swift in Sources */,
