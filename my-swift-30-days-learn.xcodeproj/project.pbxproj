@@ -23,6 +23,7 @@
 		F6E4601F1F0232850031FCF1 /* WQDay6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E4601E1F0232850031FCF1 /* WQDay6ViewController.swift */; };
 		F6E460211F0232CA0031FCF1 /* WQTableViewRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E460201F0232CA0031FCF1 /* WQTableViewRootViewController.swift */; };
 		F6E460231F025B070031FCF1 /* WQDay7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E460221F025B070031FCF1 /* WQDay7ViewController.swift */; };
+		F6E460251F0269C80031FCF1 /* WQDay8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E460241F0269C80031FCF1 /* WQDay8ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F6E4601E1F0232850031FCF1 /* WQDay6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WQDay6ViewController.swift; sourceTree = "<group>"; };
 		F6E460201F0232CA0031FCF1 /* WQTableViewRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WQTableViewRootViewController.swift; sourceTree = "<group>"; };
 		F6E460221F025B070031FCF1 /* WQDay7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WQDay7ViewController.swift; sourceTree = "<group>"; };
+		F6E460241F0269C80031FCF1 /* WQDay8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WQDay8ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				F6E4601C1F022A030031FCF1 /* WQDay5ViewController.swift */,
 				F6E4601E1F0232850031FCF1 /* WQDay6ViewController.swift */,
 				F6E460221F025B070031FCF1 /* WQDay7ViewController.swift */,
+				F6E460241F0269C80031FCF1 /* WQDay8ViewController.swift */,
 			);
 			path = GroupDemo;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				F66570A61F0140A3009C09BD /* WQDay4ViewController.swift in Sources */,
 				F6E4601B1F011ADC0031FCF1 /* WQDay2ViewController.swift in Sources */,
 				F6E45FEA1F011AB10031FCF1 /* ViewController.swift in Sources */,
+				F6E460251F0269C80031FCF1 /* WQDay8ViewController.swift in Sources */,
 				F6E45FE81F011AB10031FCF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

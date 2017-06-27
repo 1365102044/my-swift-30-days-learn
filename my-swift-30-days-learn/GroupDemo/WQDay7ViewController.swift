@@ -5,6 +5,16 @@
 //  Created by 刘文强 on 2017/6/27.
 //  Copyright © 2017年 inborn. All rights reserved.
 //
+/**
+ 总结： 
+    所要监听的属性对象要使用 dynamic 修饰
+    (监听对象，和被监听对象都是nsobjct 的子类)
+    注册
+    代理方法
+    移除监听
+ 
+ */
+
 
 import UIKit
 
@@ -27,7 +37,7 @@ class WQDay7ViewController: UIViewController, UITextFieldDelegate {
          */
         self.addObserver(self, forKeyPath: "name", options: [.new, .old] , context: &name_key)
 
-//        不能用
+//
 //        self.addObserver(self, forKeyPath: UIKeyboardFrameEndUserInfoKey, options: [.old, .new], context: &keyboard_key)
     
     
