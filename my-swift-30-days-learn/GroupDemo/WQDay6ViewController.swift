@@ -32,18 +32,15 @@ class WQDay6ViewController: UIViewController {
                 make.width.equalTo(W)
                 make.height.equalTo(scrollerview.snp.height)
             })
-            
-            
         }
-       
     }
 
     lazy var scrollerview: UIScrollView = {
         let scrollerview = UIScrollView.init(frame: CGRect(x:0,y:0,width:self.view.frame.size.width,height:400))
         scrollerview.bounces = true
-//        scrollerview.isPagingEnabled = true
+        scrollerview.isPagingEnabled = true
         scrollerview.alwaysBounceVertical = true
-        scrollerview.contentSize = CGSize(width:self.view.frame.size.width, height:400)
+        scrollerview.contentSize = CGSize(width:(self.view.frame.size.width*CGFloat(self.sourData.count)), height:400)
         scrollerview.center = self.view.center
         return scrollerview
     }()
